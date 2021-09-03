@@ -34,6 +34,7 @@
     "create-component": "./scripts/create-component",
     "rename-component": "./scripts/rename-component",
     "test": "react-scripts test",
+    "eject": "react-scripts eject",
     "storybook": "start-storybook -p 9009 -s public",
     "prepublish": "tsc",
     "build-storybook": "build-storybook -s public"
