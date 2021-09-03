@@ -1,0 +1,11 @@
+#!/bin/zsh
+
+if [ "$#" -ne 1 ]; then
+	echo "need to provide component name"
+	exit 1
+fi
+
+sed "s/__Component__/$1/g" scripts/template.component.tsx > src/components/$1.tsx
+#sed "s/__Component__/$1/g" scripts/template.test.tsx > src/components/$1.test.tsx
+sed "s/__Component__/$1/g" scripts/template.stories.tsx > src/stories/$1.stories.tsx
+

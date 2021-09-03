@@ -1,0 +1,11 @@
+#!/bin/zsh
+
+if [ "$#" -ne 2 ]; then
+	echo "need to provide old component name and new component name"
+	exit 1
+fi
+
+mv src/components/$1.tsx src/components/$2.tsx
+mv src/components/$1.test.tsx src/components/$2.test.tsx
+mv src/stories/$1.stories.tsx src/stories/$2.stories.tsx
+
