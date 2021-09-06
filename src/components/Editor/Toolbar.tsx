@@ -17,12 +17,12 @@ export const EditorSurface = styled(Surface)`
 
 export type Props = {
   className?: string;
-  styles?: CSSProperties;
+  style?: CSSProperties;
 };
 
-const EditorToolbar: FC<Props> = ({ className, styles }) => {
+const EditorToolbar: FC<Props> = ({ className, style }) => {
   return (
-    <EditorSurface className={className} styles={styles}>
+    <EditorSurface className={className} style={style}>
       <ToolbarButton format="bold" icon={<FaBold />} />
       <ToolbarButton format="italic" icon={<FaItalic />} />
       <ToolbarButton format="underlined" icon={<FaUnderline />} />

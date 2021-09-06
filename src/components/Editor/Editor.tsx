@@ -58,7 +58,7 @@ const Editor: FC<Props> = ({ initialValue, editable }) => {
         value={value}
         onChange={(value) => setValue(value)}
       >
-        {editable && <EditorToolbar styles={{ position: "relative" }} />}
+        {editable && <EditorToolbar style={{ position: "relative" }} />}
         <Editable
           readOnly={!editable}
           renderLeaf={(props) => <Leaf {...props} />}
